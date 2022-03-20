@@ -1,0 +1,256 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<?php
+switch($_GET['p'])
+{
+
+case 0:
+echo "<title>Cyphertek Portal</title>";
+break;
+
+case 1:
+echo "<title>Cyphertek Portal</title>";
+break;
+
+case 2:
+echo "<title>Cyphertek Portal - WoW Links</title>";
+break;
+
+default:
+echo "<title>Cyphertek Portal</title>";
+}
+?>
+
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"/>
+<link href="simpler.css" rel="stylesheet" type="text/css" />
+
+<link rel="stylesheet" type="text/css" href="chrometheme/chromestyle.css" />
+<script type="text/javascript" src="chromejs/chrome.js"></script>
+<style type="text/css">
+.bigpic
+{
+position:relative;
+top:-116px;
+left:460px;
+z-index:800;
+}
+</style>
+<script language="JavaScript1.1">
+
+var slidespeed=3000
+//specify images
+var slideimages=new Array("i/photo1.jpg","i/photo2.jpg","i/photo3.jpg","i/photo4.jpg","i/photo5.jpg")
+//specify corresponding links
+var slidelinks=new Array()
+
+var imageholder=new Array()
+var ie55=window.createPopup
+for (i=0;i<slideimages.length;i++){
+imageholder[i]=new Image()
+imageholder[i].src=slideimages[i]
+}
+
+function gotoshow(){
+window.location=slidelinks[whichlink]
+}
+
+
+function nxalert(){
+		document.global.sS.value = '1';
+		document.global.chxidAUDIO.checked = false;
+}
+
+function nxalert2(){
+		document.global.sS.value = '1';
+		document.global.b1t.value = '10';
+		document.global.b2t.value = '22';
+		document.global.chxidMOVIE.checked = true;
+		document.global.chxidAUDIO.checked = false;
+}
+//-->
+</script>
+
+
+</head>
+<body>
+
+
+
+<div id="wrap">
+	<div id="head">
+		<h1 class="title"><font size="5px">Cyphertek.com</font></h1>
+        <div class="bigpic">
+        <?
+$tm=time();
+//$today=getdate(mktime(0,0,0,2,14,2008));
+// Use the above line and comment below line for changing the days and test the script.
+
+srand ((double) microtime( )*1000000);
+$random_number = rand(0,6);
+
+
+switch($random_number)
+{
+
+case 0:
+echo "<img src=\"i/g1.gif\">";
+break;
+
+case 1:
+echo "<img src=\"i/g7.gif\">";
+break;
+
+case 2:
+echo "<img src=\"i/g3.gif\">";
+break;
+
+case 3:
+echo "<img src=\"i/g4.gif\">";
+break;
+
+case 4:
+echo "<img src=\"i/g5.gif\">";
+break;
+
+case 5:
+echo "<img src=\"i/g6.gif\">";
+break;
+
+case 6:
+echo "<img src=\"i/g7.gif\">";
+break;
+
+default:
+echo "<img src=\"i/g1.gif\">";
+}
+
+?>
+</div>
+	</div>
+	<div id="main">
+
+<?php include("inc.menu.php"); ?>
+
+<script type="text/javascript">cssdropdown.startchrome("chromemenu")</script>
+
+      <div id="splash">
+        <h2 class="subtitle">Antonizick's Portal</h2>
+
+        <script language="JavaScript1.1">
+<!--
+var whichlink=0
+var whichimage=0
+var pixeldelay=(ie55)? document.images.slide.filters[0].duration*1000 : 0
+function slideit(){
+if (!document.images) return
+if (ie55) document.images.slide.filters[0].apply()
+document.images.slide.src=imageholder[whichimage].src
+if (ie55) document.images.slide.filters[0].play()
+whichlink=whichimage
+whichimage=(whichimage<slideimages.length-1)? whichimage+1 : 0
+setTimeout("slideit()",slidespeed+pixeldelay)
+}
+slideit()
+
+//-->
+</script>
+
+
+      </div>
+	  <div id="content">
+
+<div class="box3" id="nxcon">
+   <form action="http://www.google.com/search" target="_top" name=f>
+
+<input type=hidden name=oe value="UTF-8"><input type=hidden name=ie value="UTF-8"><input type=hidden name=hl value=en>
+
+<table border="0" width="100%">
+
+  <tr>
+
+    <td width="48%" rowspan="2">
+
+
+<img src="https://duckduckgo.com/assets/logo_header.v107.lg.svg"><iframe src="https://duckduckgo.com/search.html?prefill=Search DuckDuckGo" style="overflow:hidden;margin:0;padding:0;width:250px;height:50px;" frameborder="0"></iframe>
+<!-- Old Google Search
+<p align="center"><a href="https://www.google.com/accounts/ServiceLogin?continue=http://www.google.com/ig&followup=http://www.google.com/ig&service=ig&passive=true&cd=US&hl=en&nui=1&ltmpl=default">
+
+<IMG src="i/giroux1.gif"
+
+border="0" ALT="Google" align="middle" width="143" height="59"></a>
+  <input maxlength=256 size=20 name=q value="" />
+</p>    </td>
+
+    <td width="52%" colspan="2"><input type=submit value="Google Search" name=btnG /></td>
+  </tr>
+  <tr>
+    <td><input type=submit value="I'm Feeling Lucky" name=btnI /></td> //-->
+    <td><div align="center"><table border="0"><tr><td><a href="https://members.easynews.com/global5/search.html?fly=2"><img src="i/homeicon.jpg" alt="" width="27" height="27" border="0" /></a>&nbsp;
+<a href="https://members.easynews.com/zipmanager.html"><img src="i/zip.jpg" border="0" alt="" width="27" height="27" /></a>&nbsp;
+	<a href="index.php?p=2"><img src="i/wow.jpg" border="0" alt="" width="27" height="27" /></a>&nbsp;
+	<a href="http://www.antonizick.com/cyphertek/index.php?p=7"><img src="i/tor.png" border="0" alt="" width="27" height="27" /></a>
+	<a href="http://www.youtube.com/"><img src="i/yt.jpg" border="0" alt="" width="27" height="27" /></a>&nbsp;</td>&nbsp;</td>
+    </tr></table></div></td>
+  </tr>
+
+  <tr>
+</td>
+  </tr>
+</table>
+
+</form>
+
+
+<?php
+switch($_GET['p'])
+{
+
+case 0:
+include("inc.mobile.php");
+break;
+
+case 1:
+include("inc.mobile.php");
+break;
+
+case 2:
+include("inc.links.php");  // World of Warcraft
+break;
+
+case 3:
+include("inc.notes.php");
+break;
+
+case 4:
+include("inc.apps.php");
+break;
+
+case 5:
+include("inc.tv.php");
+break;
+
+case 6:
+include("inc.tor.php");  // Star Wars The Old Republic
+break;
+
+case 7:
+include("inc.mobile.php");  // mobile layout
+break;
+
+case 8:
+include("inc.easynews.php");  // mobile layout
+break;
+
+default:
+include("inc.mobile.php");   // default mobile layout    used to be this....("inc.easynews.php");
+}
+?>
+</div>
+</div>
+<div id="footer">
+		<p>&copy; Knights Development LLC | Cyphertek.com</p>
+</div>
+
+</body>
+</html>
