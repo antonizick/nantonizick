@@ -112,10 +112,10 @@ body .title {
 }
 
 body .title .heroimg {
-  width: 14em;
-  height: 14em;
+  width: 10em;
+  height: 10em;
   position: relative;
-  top: 0px;
+  top: -19px;
   left: 0px;
   border: 2em;
   z-index: 15;
@@ -126,9 +126,9 @@ body .title .heroimg {
 body .title .herotxt {
   margin: auto;
   width: 90%;
-  height: 100px;
+  height: 70px;
   position: relative;
-  top: -11em;
+  top: -10em;
   left: 10px;
   z-index: 5;
   display: -webkit-box;
@@ -154,7 +154,8 @@ body .title .herotxt .spacer2 {
 
 body .nxnav {
   position: relative;
-  top: -80px;
+  top: -150px;
+  left: 12em;
   margin: auto;
   width: 80%;
   height: 50px;
@@ -162,10 +163,11 @@ body .nxnav {
 }
 
 body .nxlinks {
+  position: absolute;
   margin: auto;
   margin-top: 0em;
-  width: 60%;
-  height: 800px;
+  width: 40%;
+  height: 900px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -173,8 +175,8 @@ body .nxlinks {
   background-color: azure;
   border: 15px solid #070797;
   position: relative;
-  top: -113px;
-  left: 100px;
+  top: -190px;
+  left: 200px;
 }
 
 body .sec1 {

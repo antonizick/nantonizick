@@ -1,212 +1,214 @@
 body {
-    background-image: url(../img/bg.jpg);
-    background-size: cover;
-    \\background: grey;
-    align-items: center;
-    margin: 4em;
+  background-image: url(../img/bg.jpg);
+  background-size: cover;
+  \\background: grey;
+  align-items: center;
+  margin: 4em;
 
-    nav {
-        &.primary-navigation {
+  nav {
+      &.primary-navigation {
+        margin: 0 auto;
+        display: block;
+        padding: 0px 0 0 0;  
+        text-align: center;
+        font-size: 16px;
+    
+        ul li {
+          list-style: none;
           margin: 0 auto;
-          display: block;
-          padding: 0px 0 0 0;  
+          border-left: 2px solid #3ca0e7;
+          display: inline-block;
+          padding: 0 30px;
+          position: relative;
+          text-decoration: none;
           text-align: center;
-          font-size: 16px;
-      
-          ul li {
-            list-style: none;
-            margin: 0 auto;
-            border-left: 2px solid #3ca0e7;
-            display: inline-block;
-            padding: 0 30px;
-            position: relative;
-            text-decoration: none;
-            text-align: center;
-            font-family: arvo;
-          }
-      
-          li a {
-            color: whitesmoke;
-          }
-      
-          li a:hover {
-            color: #3ca0e7;
-          }
-      
-          li:hover {
-            cursor: pointer;
-          }
-      
-          ul li ul {
-            visibility: hidden;
-            opacity: 0;
-            position: absolute;
-            padding-left: 0;
-            left: 0;
-            display: none;
-            background:  #070797;
-          }
-      
-          ul li:hover > ul,
-          ul li ul:hover {
-            visibility: visible;
-            opacity: 1;
-            display: block;
-            min-width: 250px;
-            text-align: left;
-            padding-top: 20px;
-            width: 1em;
-            box-shadow: 0px 3px 5px -1px  #070707;
-          }
-      
-          ul li ul li {
-            clear: both;
-            width: 100%;
-            text-align: left;
-            margin-bottom: 20px;
-            border-style: none;
-          }
-      
-          ul li ul li a:hover {
-            padding-left: 10px;
-            border-left: 2px solid #070797;
-            transition: all 0.3s ease;
-          }
+          font-family: arvo;
+        }
+    
+        li a {
+          color: whitesmoke;
+        }
+    
+        li a:hover {
+          color: #3ca0e7;
+        }
+    
+        li:hover {
+          cursor: pointer;
+        }
+    
+        ul li ul {
+          visibility: hidden;
+          opacity: 0;
+          position: absolute;
+          padding-left: 0;
+          left: 0;
+          display: none;
+          background:  #070797;
+        }
+    
+        ul li:hover > ul,
+        ul li ul:hover {
+          visibility: visible;
+          opacity: 1;
+          display: block;
+          min-width: 250px;
+          text-align: left;
+          padding-top: 20px;
+          width: 1em;
+          box-shadow: 0px 3px 5px -1px  #070707;
+        }
+    
+        ul li ul li {
+          clear: both;
+          width: 100%;
+          text-align: left;
+          margin-bottom: 20px;
+          border-style: none;
+        }
+    
+        ul li ul li a:hover {
+          padding-left: 10px;
+          border-left: 2px solid #070797;
+          transition: all 0.3s ease;
         }
       }
-      
-      a {
-      
-          text-decoration: none;
-      
-          &:hover {
-              color: #3CA0E7;
+    }
+    
+    a {
+    
+        text-decoration: none;
+    
+        &:hover {
+            color: #3CA0E7;
+        }
+     
+    }
+    
+     ul li ul li a { transition: all 0.5s ease; }
+    
+    
+
+          .container {
+              margin: auto;
+              width: 80%;
+              height: fit-content;
+              padding: 15px;
+              //border: 20px solid grey;
+              //border: 20px solid red;
           }
-       
-      }
-      
-       ul li ul li a { transition: all 0.5s ease; }
-      
-      
+          
+                  .title {
+                      margin: auto;
+                      width: 80%;
+                      align-items: center;
+                      align-content: center;
+                      height: 200px;
+                      //border: 15px solid grey;
+                      //border: 15px solid greenyellow;
+                      
 
-            .container {
-                margin: auto;
-                width: 80%;
-                height: fit-content;
-                padding: 15px;
-                //border: 20px solid grey;
-                //border: 20px solid red;
-            }
-            
-                    .title {
-                        margin: auto;
-                        width: 80%;
-                        align-items: center;
-                        align-content: center;
-                        height: 200px;
-                        //border: 15px solid grey;
-                        //border: 15px solid greenyellow;
-                        
+                              .heroimg {
+                                  width: 10em;
+                                  height: 10em;
+                                  position: relative;
+                                  top: -19px;
+                                  left:0px;
+                                  border: 2em;
+                                  z-index: 15;
+                                  object-position: center;
+                                  //visibility: hidden;
+                              }
 
-                                .heroimg {
-                                    width: 14em;
-                                    height: 14em;
-                                    position: relative;
-                                    top: 0px;
-                                    left:0px;
-                                    border: 2em;
-                                    z-index: 15;
-                                    object-position: center;
-                                    //visibility: hidden;
-                                }
+                              .herotxt {
+                                  margin: auto;
+                                  width: 90%;
+                                  height: 70px;
+                                  position: relative;
+                                  top: -10em;
+                                  left:10px;
+                                  z-index: 5;
+                                  display: flex;
+                                  border: 25px solid #070797;
+                                  border-top: 1px solid #070797;
 
-                                .herotxt {
-                                    margin: auto;
-                                    width: 90%;
-                                    height: 100px;
-                                    position: relative;
-                                    top: -11em;
-                                    left:10px;
-                                    z-index: 5;
-                                    display: flex;
-                                    border: 25px solid #070797;
-                                    border-top: 1px solid #070797;
+                                  .spacer1 {
+                                      width: 13em;
+                                      background-color: #070797;
+                                  }
 
-                                    .spacer1 {
-                                        width: 13em;
-                                        background-color: #070797;
-                                    }
+                                  .spacer2 {
+                                      text-align: right;
+                                      line-height: .8em;
+                                      color: white;
+                                      font-size: large;
+                                      width: 100%;
+                                      background-color: #070797;
+                                  }
 
-                                    .spacer2 {
-                                        text-align: right;
-                                        line-height: .8em;
-                                        color: white;
-                                        font-size: large;
-                                        width: 100%;
-                                        background-color: #070797;
-                                    }
+                              }
+                  }
 
-                                }
-                    }
-
-                    .nxnav {
-                        position: relative;
-                        top: -80px;
-                        margin: auto;
-                        width: 80%;
-                        height: 50px;
-                        //border: 1px solid yellow;
-                        z-index: 5;
-                        //visibility: hidden;
-                    }
+                  .nxnav {
+                      position: relative;
+                      top: -150px;
+                      left: 12em;
+                      margin: auto;
+                      width: 80%;
+                      height: 50px;
+                      //border: 1px solid yellow;
+                      z-index: 5;
+                      //visibility: hidden;
+                  }
 
 
-                    .nxlinks {
-                        margin: auto;
-                        margin-top: 0em;
-                        width: 60%;
-                        height: 800px;
-                        align-items: center;
-                        background-image: url(../img/bianary.grey.png);
-                        background-color: azure;
-                        border: 15px solid #070797;
-                        position: relative;
-                        top: -113px;
-                        left:100px;
-                        //visibility: hidden;
-                    }
-                    
-                    .sec1 {
-                        margin: auto;
-                        margin-top: 2em;
-                        width: 90%;
-                        height: 200px;
-                        border: 15px solid green;
-                        visibility: hidden;
-                    }
-                    
-                    .sec2 {
-                        margin: auto;
-                        width: 80%;
-                        height: 200px;
-                        border: 15px solid yellow;
-                        visibility: hidden;
-                    }
-                    
-                    .sec3 {
-                        margin: auto;
-                        width: 80%;
-                        height: 200px;
-                        border: 15px solid green;
-                        visibility: hidden;
-                    }
-                    
-                    .sec4 {
-                        margin: auto;
-                        width: 80%;
-                        height: 200px;
-                        border: 15px solid yellow;
-                        visibility: hidden;
-                    }
+                  .nxlinks {
+                      position: absolute;
+                      margin: auto;
+                      margin-top: 0em;
+                      width: 40%;
+                      height: 900px;
+                      align-items: center;
+                      background-image: url(../img/bianary.grey.png);
+                      background-color: azure;
+                      border: 15px solid #070797;
+                      position: relative;
+                      top: -190px;
+                      left:200px;
+                      //visibility: hidden;
+                  }
+                  
+                  .sec1 {
+                      margin: auto;
+                      margin-top: 2em;
+                      width: 90%;
+                      height: 200px;
+                      border: 15px solid green;
+                      visibility: hidden;
+                  }
+                  
+                  .sec2 {
+                      margin: auto;
+                      width: 80%;
+                      height: 200px;
+                      border: 15px solid yellow;
+                      visibility: hidden;
+                  }
+                  
+                  .sec3 {
+                      margin: auto;
+                      width: 80%;
+                      height: 200px;
+                      border: 15px solid green;
+                      visibility: hidden;
+                  }
+                  
+                  .sec4 {
+                      margin: auto;
+                      width: 80%;
+                      height: 200px;
+                      border: 15px solid yellow;
+                      visibility: hidden;
+                  }
 
 }
