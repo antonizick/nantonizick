@@ -1,7 +1,7 @@
 body {
   background-image: url(../img/bg.jpg);
   background-size: cover;
-  \\background: grey;
+  \\background: blue;
   align-items: center;
   margin: 4em;
 
@@ -152,7 +152,7 @@ body {
                   .nxnav {
                       position: relative;
                       top: -150px;
-                      left: -2em;
+                      left: 8em;
                       margin: auto;
                       width: 80%;
                       height: 50px;
@@ -177,38 +177,88 @@ body {
                       left:50px;
                       //visibility: hidden;
                   }
-                  
-                  .sec1 {
-                      margin: auto;
-                      margin-top: 2em;
-                      width: 90%;
-                      height: 200px;
-                      border: 15px solid green;
-                      visibility: hidden;
-                  }
-                  
-                  .sec2 {
-                      margin: auto;
-                      width: 80%;
-                      height: 200px;
-                      border: 15px solid yellow;
-                      visibility: hidden;
-                  }
-                  
-                  .sec3 {
-                      margin: auto;
-                      width: 80%;
-                      height: 200px;
-                      border: 15px solid green;
-                      visibility: hidden;
-                  }
-                  
-                  .sec4 {
-                      margin: auto;
-                      width: 80%;
-                      height: 200px;
-                      border: 15px solid yellow;
-                      visibility: hidden;
-                  }
+}
+
+/* ----------------------------------------------------------------------------
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) { 
+  body {
+    background: red;
+  }
+
+ }
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) and (max-width: 767.98px) { 
+  body {
+    background: purple;
+  }
 
 }
+---------------------------------------------------------------------------- */
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) and (max-width: 1400px) { 
+  
+  body {
+        margin: 0em;
+        margin-top: 4em;;
+
+        .container {
+          width: 100%;
+          }
+
+.title {
+      width: 105%;
+      position: relative;
+      left: -3em;
+      }
+
+.nxnav {
+      left: 1em;
+      }
+
+.nxlinks {
+        width: 93%;
+        position: relative;
+        left: -.5em;
+        }
+        }
+ }
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 1400px) and (max-width: 2200px) { 
+  
+  body {
+          .container {
+                      width: 100%;
+                      }
+                    
+          .title {
+                  width: 88%;
+                  position: relative;
+                  left: -4em;
+
+                  .heroimg {
+                            position: relative;
+                            left:5em;
+                            }
+
+
+                  }
+
+          .nxnav {
+                  left: -3em;
+                  }
+
+          .nxlinks {
+                    width: 70%;
+                    position: relative;
+                    left: 0em;
+                    }
+      }
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 2200px) {
+                            // See CSS code above
+                            }
