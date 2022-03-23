@@ -1,7 +1,7 @@
 body {
-  background-image: url(../img/bg.jpg);
+  \\background-image: url(../img/bg.jpg);
   background-size: cover;
-  \\background: grey;
+  \\background: blue;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -155,7 +155,7 @@ body .title .herotxt .spacer2 {
 body .nxnav {
   position: relative;
   top: -150px;
-  left: -2em;
+  left: 8em;
   margin: auto;
   width: 80%;
   height: 50px;
@@ -210,5 +210,51 @@ body .sec4 {
   height: 200px;
   border: 15px solid yellow;
   visibility: hidden;
+}
+
+@media (max-width: 575.98px) {
+  body {
+    background: red;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  body {
+    background: purple;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  body {
+    background: yellow;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 2200px) {
+  body {
+    background: green;
+  }
+}
+
+@media (min-width: 2200px) {
+  body {
+    background-image: url(../img/bg.jpg);
+    background-size: cover;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 4em;
+  }
+  body .heroimg {
+    width: 10em;
+    height: 10em;
+    position: relative;
+    top: -19px;
+    left: 50px;
+    border: 2em;
+    z-index: 15;
+    -o-object-position: center;
+       object-position: center;
+  }
 }
 /*# sourceMappingURL=main.css.map */
