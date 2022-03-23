@@ -1,5 +1,5 @@
 body {
-  \\background-image: url(../img/bg.jpg);
+  background-image: url(../img/bg.jpg);
   background-size: cover;
   \\background: blue;
   align-items: center;
@@ -177,42 +177,9 @@ body {
                       left:50px;
                       //visibility: hidden;
                   }
-                  
-                  .sec1 {
-                      margin: auto;
-                      margin-top: 2em;
-                      width: 90%;
-                      height: 200px;
-                      border: 15px solid green;
-                      visibility: hidden;
-                  }
-                  
-                  .sec2 {
-                      margin: auto;
-                      width: 80%;
-                      height: 200px;
-                      border: 15px solid yellow;
-                      visibility: hidden;
-                  }
-                  
-                  .sec3 {
-                      margin: auto;
-                      width: 80%;
-                      height: 200px;
-                      border: 15px solid green;
-                      visibility: hidden;
-                  }
-                  
-                  .sec4 {
-                      margin: auto;
-                      width: 80%;
-                      height: 200px;
-                      border: 15px solid yellow;
-                      visibility: hidden;
-                  }
 }
 
-
+/* ----------------------------------------------------------------------------
 // Extra small devices (portrait phones, less than 576px)
 @media (max-width: 575.98px) { 
   body {
@@ -228,42 +195,70 @@ body {
   }
 
 }
-
+---------------------------------------------------------------------------- */
 // Medium devices (tablets, 768px and up)
-@media (min-width: 768px) and (max-width: 991.98px) { 
+@media (min-width: 768px) and (max-width: 1400px) { 
   
   body {
-    background: yellow;
-  }
+        margin: 0em;
+        margin-top: 4em;;
+
+        .container {
+          width: 100%;
+          }
+
+.title {
+      width: 105%;
+      position: relative;
+      left: -3em;
+      }
+
+.nxnav {
+      left: 1em;
+      }
+
+.nxlinks {
+        width: 93%;
+        position: relative;
+        left: -.5em;
+        }
+        }
  }
 
 // Large devices (desktops, 992px and up)
-@media (min-width: 992px) and (max-width: 2200px) { 
+@media (min-width: 1400px) and (max-width: 2200px) { 
   
   body {
-    background: green;
-  }
+          .container {
+                      width: 100%;
+                      }
+                    
+          .title {
+                  width: 88%;
+                  position: relative;
+                  left: -4em;
+
+                  .heroimg {
+                            position: relative;
+                            left:5em;
+                            }
+
+
+                  }
+
+          .nxnav {
+                  left: -3em;
+                  }
+
+          .nxlinks {
+                    width: 70%;
+                    position: relative;
+                    left: 0em;
+                    }
+      }
 }
 
 // Extra large devices (large desktops, 1200px and up)
 @media (min-width: 2200px) {
-  
-      body {
-        background-image: url(../img/bg.jpg);
-        background-size: cover;
-        align-items: center;
-        margin: 4em;
-
-                .heroimg {
-                  width: 10em;
-                  height: 10em;
-                  position: relative;
-                  top: -19px;
-                  left:50px;
-                  border: 2em;
-                  z-index: 15;
-                  object-position: center;
-              }
-      }
-
- }
+                            // See CSS code above
+                            }
